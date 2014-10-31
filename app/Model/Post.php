@@ -12,9 +12,15 @@ App::uses('AppModel', 'Model');
  *
  */
 class Post extends AppModel {
+/**
+ * 一覧表示時のタイトルに使用するカラム名
+ *
+ * @var string
+ */
+    public $displayField = 'title';
 
 /**
- * Validation rules
+ * バリデーションルール
  *
  * @var array
  */
